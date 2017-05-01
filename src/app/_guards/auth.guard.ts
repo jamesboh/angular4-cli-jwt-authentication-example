@@ -17,3 +17,20 @@ export class AuthGuard implements CanActivate {
         return false;
     }
 }
+
+// with angular2-jwt and modified AuthGuard like this:
+
+// @Injectable()
+// export class AuthGuard implements CanActivate {
+
+//     constructor(private router: Router) {}
+
+//     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+
+//         if (tokenNotExpired('currentUser')) return true;
+
+//         this.router.navigate(['/login']);
+
+//         return false;
+//     }
+// }

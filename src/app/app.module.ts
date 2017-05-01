@@ -34,6 +34,7 @@ import { HomeComponent } from './home/index';
     UserService,
 
     // providers used to create fake backend
+    // to switch to a real backend simply remove the providers located here used to create fake backend.
     fakeBackendProvider,
     MockBackend,
     BaseRequestOptions
